@@ -1,0 +1,17 @@
+.city
+{
+	background-color: rgb(128, 128, 128)
+}
+
+#bibliographie
+{
+	font-size:x-small; 
+	padding:0px;
+}
+
+.box 
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}

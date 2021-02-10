@@ -3,66 +3,55 @@
 	<head>
 	  <charset="UTF-8">
 	  <title>Météo Rhône</title>
-	  <style>
-		.backgroundDiv
-		{
-			background-color: rgb(128, 128, 128)
-		}
-		
-		#bibliographie
-		{
-			font-size:x-small; 
-			padding:0px;
-		}
-		
-		.box 
-		{
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-        }
-	  </style>
-	  
-	  <script>
-		let villeCourante = "Lyon"
-		function showCity() { alert(villeCourante); }
-		
-	  </script>
+	  <link rel="stylesheet" href = "./meteo.css">
+	  <script src="./meteo.js"></script>
 	</head>
-	<body onload="showCity()">
+	<body>
 	  <h1>Météo des grandes villes du Rhône</h1>
+	  <div style="margin-bottom:20px;">
+		<span>
+			Choisir une ville:
+		</span>
+		<select id="menuVille" onchange=showCity()>
+			<option value="Lyon"> Lyon </option>
+			<option value="Villeurbanne"> Villeurbanne </option>
+			<option value="Vénissieux"> Vénissieux </option>
+			<option value="Saint-Priest"> Saint-Priest </option>
+			<option value="Caluire-et-Cuile"> Caluire-et-Cuile </option>
+		</select>
+	  </div>
 	  <div class="box">
-		<div class="backgroundDiv">
+		<div id="Lyon" class="city">
 			<h2>Lyon</h2>
 			<p>8°C,nuages couverts.</p>
 			<img src="./Images/noun_overcast_3330925.png" width="70">
 		</div>
 	  
-		<div class="backgroundDiv">
+		<div id="Villeurbanne" class="city">
 			<h2>Villeurbanne</h2>
 			<p>11°C,pluie légère.</p>
 			<img src="./Images/noun_Rain_3330928.png" width="70">
 		</div>
 	  
-		<div class="backgroundDiv">
+		<div id="Vénissieux" class="city">
 			<h2>Vénissieux</h2>
 			<p>0°C,neige/pluie.</p>
 			<img src="./Images/noun_sleet_3330869.png" width="70">
 		</div>
 	   
-		<div class="backgroundDiv">
+		<div id="Saint-Priest" class="city">
 			<h2>Saint-Priest</h2>
 			<p>5°C,nuages dispersés.</p>
 			<img src="./Images/noun_cloudy_3330889.png" width="70">
 		</div>
 	  
-		<div class="backgroundDiv">
+		<div id="Caluire-et-Cuile" class="city">
 			<h2>Caluire-et-Cuile</h2>
 			<p>7°C,ensoleillé.</p>
 			<img src="./Images/noun_sunny_3330899.png" width="70">
 		</div>
 	</div>	
-	<p>Ishimwe Habamungu Bénitha<br>
+	<p>Ishimwe Habamungu Bénitha<br/>
 	<b>Icônes météo par Jae Designer from Noun Project</b></p>
   </body>
 </html>

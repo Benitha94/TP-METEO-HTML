@@ -15,3 +15,18 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+#selectDiv
+{
+	margin-bottom:20px;
+	margin-top:0px;
+}
+#title
+{
+	background-color : black;
+	margin-bottom : 0px;
+}
+#title>h1
+{
+	color: white;
+}
